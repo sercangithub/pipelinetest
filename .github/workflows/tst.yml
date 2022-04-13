@@ -13,4 +13,3 @@ jobs:
         if: github.event.pull_request.merged == false
         run: |
           echo $GITHUB_REF_NAME
-          echo hi
