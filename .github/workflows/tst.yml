@@ -1,6 +1,6 @@
 name: pipeline
 on:
-  pull:
+  pull_request:
     branches: [ main ]
       type: [ closed ]        
 env:
