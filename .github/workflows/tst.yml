@@ -1,7 +1,7 @@
 name: pipeline
 on:
   pull:
-    branches: [ development ]
+    branches: [ main ]
       type: [ closed ]        
 env:
   test: test
