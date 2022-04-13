@@ -1,7 +1,8 @@
 name: pipeline
 on:
-  push:
-    branches: [ development ]
+  pull:
+    branches: [ main ]
+      type: [ closed ]        
 env:
   test: test
 jobs:
@@ -9,5 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print env
+        if: 
+        echo: github.event.pull_request == true
         run: |
           echo $GITHUB_REF_NAME
+          echo hi
