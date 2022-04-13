@@ -2,7 +2,7 @@ name: pipeline
 on:
   pull:
     branches: [ main ]
-      type: [ confirmed ]        
+      type: [ closed ]        
 env:
   test: test
 jobs:
