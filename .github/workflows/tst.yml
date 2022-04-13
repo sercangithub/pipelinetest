@@ -12,3 +12,4 @@ jobs:
         if: github.event.pull_request == true
         run: |
           echo $GITHUB_REF_NAME
+          echo hi
