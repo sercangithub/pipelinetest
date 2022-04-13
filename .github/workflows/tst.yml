@@ -2,7 +2,7 @@ name: pipeline
 on:
   pull_request:
     branches: [ main ]
-    types: [ closed ]        
+    types: [ merged ]        
 env:
   test: test
 jobs:
@@ -13,3 +13,6 @@ jobs:
         if: github.event.pull_request.merged == false
         run: |
           echo $GITHUB_REF_NAME
+          echo hi
+          echo vatr 
+          echo developer
