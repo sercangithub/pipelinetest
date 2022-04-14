@@ -12,4 +12,11 @@ jobs:
       - name: print env
         if: github.event.pull_request.merged == true
         run: |
-          echo $GITHUB_REF_NAME
+          git clone https://github.com/sercangithub/pipelinetest.git -b development
+          cd pipelinetest/
+          git config --global user.email "sercanbeyazoglu@yahoo.com"
+          git config --global user.name "sercangithub"
+          echo "hi" >> test.txt
+          git add -A
+          git commit -m "composer"
+          git push origin main
