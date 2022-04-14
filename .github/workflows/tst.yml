@@ -20,4 +20,4 @@ jobs:
           echo "hi" >> test.txt
           git add -A
           git commit -m "composer"
-          git push origin main
+          git push
