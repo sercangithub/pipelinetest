@@ -1,0 +1,13 @@
+name: pipeline
+on: 
+  push: 
+    branches: [ main ]        
+env:
+  test: test
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env
+        run: |
+          echo "hi from main"
