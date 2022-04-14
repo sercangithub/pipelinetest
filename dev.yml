@@ -1,0 +1,14 @@
+name: pipeline
+on: 
+  push: 
+    branches: [ development ]        
+env:
+  test: test
+jobs:
+  pipeline:
+    if: github.event.head.commit_message == 'composerupdate'
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env
+        run: |
+          echo "hi from main"
