@@ -6,7 +6,7 @@ env:
   test: test
 jobs:
   pipeline:
-    if: github.event.head.commit_message == 'composer'
+    if: github.event.head_commit.message == 'composer'
     runs-on: ubuntu-latest
     steps:
       - name: print env
