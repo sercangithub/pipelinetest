@@ -9,6 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print env
-        if: github.event.pull_request.merged == true
         run: |
           echo "hi from main"
