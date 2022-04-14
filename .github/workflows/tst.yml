@@ -2,7 +2,7 @@ name: pipeline
 on:
   pull_request:
     branches: [ main ]
-    types: [ closed ]        
+    types: [ closed ]
 env:
   test: test
 jobs:
@@ -14,4 +14,4 @@ jobs:
         run: |
           echo $GITHUB_REF_NAME
           echo hi
-          echo vatr 
+          echo vatr
