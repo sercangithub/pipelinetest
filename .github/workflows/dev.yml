@@ -1,7 +1,7 @@
 name: pipeline
 on: 
   push: 
-    branches: [ development ]        
+    branches: [ stage ]        
 env:
   test: test
 jobs:
