@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print env
-        if: github.event.pull_request.merged == false
+        if: github.event.pull_request.merged == true
         run: |
           echo $GITHUB_REF_NAME
           echo hi
