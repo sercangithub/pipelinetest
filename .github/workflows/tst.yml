@@ -13,5 +13,3 @@ jobs:
         if: github.event.pull_request.merged == true
         run: |
           echo $GITHUB_REF_NAME
-          echo hi
-          echo vatr
