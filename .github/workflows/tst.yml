@@ -5,6 +5,7 @@ on:
     types: [ closed ]
 env:
   test: test
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -12,7 +13,7 @@ jobs:
       - name: print env
         if: github.event.pull_request.merged == true
         run: |
-          git clone https://github.com/sercangithub/pipelinetest.git -b development
+          git clone https://$GITHUB_TOKEN:@github.com/sercangithub/pipelinetest.git -b development
           cd pipelinetest/
           git config --global user.email "sercanbeyazoglu@yahoo.com"
           git config --global user.name "sercangithub"
