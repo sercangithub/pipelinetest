@@ -10,4 +10,8 @@ jobs:
     steps:
       - name: print env
         run: |
-          echo "hi from main"
+          python3 
+          import requests
+          import re
+          x = "Hi from python"
+          print(x)
