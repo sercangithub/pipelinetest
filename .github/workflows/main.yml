@@ -20,5 +20,6 @@ jobs:
       - name: ls
         run: |
           ls ${{ github.workspace }}
+          find deneme.py /
       
           
