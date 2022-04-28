@@ -19,9 +19,8 @@ jobs:
       - name: run python
         run: |
           python3 deneme.py > ip.txt
-          export MYENV=$(cat ip.txt)
-      - name: print env
-        run: echo $MYENV
+          MYENV=$(cat ip.txt)
+          echo $MYENV
         
 
           
