@@ -1,7 +1,7 @@
 name: pipeline
 on: 
-  schedule:  
-    - cron: '20 09 * * *'      
+  push: 
+    branches: [ main ] 
 env:
   test: test
   GITHUB_ACTOR: sercangithub
@@ -9,9 +9,12 @@ env:
   GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
 jobs:
   pipeline:
+    if: github.event.head_commit.message == 'calis'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: saat
+        run: echo $DATE
       - name: instaAll python module
         run: |
           pip install requests
