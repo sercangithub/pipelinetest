@@ -9,6 +9,7 @@ jobs:
   pipeline:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: print env
         run: |
           pip install requests
