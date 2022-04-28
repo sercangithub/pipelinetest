@@ -17,6 +17,7 @@ jobs:
           pwd
           ls -la
           cd test
+          pwd
       - name: sdf
         run: |
           pwd
