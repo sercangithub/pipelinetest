@@ -18,8 +18,10 @@ jobs:
       - name: ls
         run: ls -la
       - name: cd
-        run: cd ..
+        run: cd ../..
       - name: ls
-        run: ls -la
+        run: |
+        pwd
+        ls -la
       
           
