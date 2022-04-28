@@ -24,7 +24,11 @@ jobs:
           echo $MYENV
           rm -rf ip.txt
           ls -la
-
+      - name: git push
+        run:
+          git add -A
+          git commit -m "test"
+          pit push
         
         
 
