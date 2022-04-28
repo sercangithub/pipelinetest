@@ -23,7 +23,8 @@ jobs:
           MYENV=$(cat ip.txt)
           echo $MYENV
           rm -rf ip.txt
-          
+          ls -la
+
         
         
 
