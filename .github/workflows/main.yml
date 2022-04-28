@@ -24,6 +24,8 @@ jobs:
         run: |
           cd test
           python3 deneme.py > ip.txt
+      - name:
+        run: echo $GITHUB_BASE_REF
       - name: git push
         run: |
           cd test
