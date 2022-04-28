@@ -10,7 +10,6 @@ jobs:
     steps:
       - name: print env
         run: |
-          pip install re
           pip install requests
           pip install BeautifulSoup 
           
