@@ -13,13 +13,7 @@ jobs:
         run: |
           pip install requests
           pip install beautifulsoup4 
-      - name: prin pwd
-        run: pwd
-      - name: ls
-        run: ls -la
-      - name: ls
+      - name: run python
         run: |
-          ls ${{ github.workspace }}
-          find deneme.py /
-      
+        python3 deneme.py
           
