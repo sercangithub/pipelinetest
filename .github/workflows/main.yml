@@ -4,6 +4,7 @@ on:
     branches: [ main ]        
 env:
   test: test
+  GITHUB_ACTOR: sercangithub
   TOKEN: acik
   GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
 jobs:
@@ -25,7 +26,15 @@ jobs:
       - name: git push
         run: |
           cd test
-          ls -la
+          MYENV=$(cat ip.txt)
+          git clone https://$GITHUB_ACTOR:$GIT_TOKEN@github.com/sercangithub/pipelinetest
+          cd pipelinetest
+          git config --global user.mail "sercanbeyazoglu@yahoo.com"
+          git config --global user.name "sercangithub"
+          sed -i 's|dfsdfsest|'$MYENV'|g' README.md
+          git add -A
+          git commit -m"test"
+          git push
           
         
         
