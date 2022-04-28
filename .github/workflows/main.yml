@@ -19,7 +19,7 @@ jobs:
         run: ls -la
       - name: ls
         run: |
-          cd ..
+          cd
           pwd
           ls -la
       
