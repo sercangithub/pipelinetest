@@ -22,7 +22,9 @@ jobs:
           python3 deneme.py > ip.txt
           MYENV=$(cat ip.txt)
           echo $MYENV
-          ls -la
+          rm -rf ip.txt
+          
+        
         
 
           
