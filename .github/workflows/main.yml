@@ -11,5 +11,5 @@ jobs:
       - name: print env
         run: |
           pip install requests
-          pip install beautifulsoup 
+          pip install beautifulsoup4 
           
