@@ -20,6 +20,9 @@ jobs:
         run: |
           python3 deneme.py > ip.txt
           ENV=$(cat ip.txt)
-          echo $ENV
+          export ENV
+      - name: print env
+        run: echo $ENV
+        
 
           
