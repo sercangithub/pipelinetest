@@ -4,7 +4,7 @@ on:
     branches: [ main ]        
 env:
   test: test
-  TOKEN: ${{ secrets.TOKEN }}
+  TOKEN: acik
 jobs:
   pipeline:
     runs-on: ubuntu-latest
