@@ -27,9 +27,11 @@ jobs:
           ls -la
       - name: git push
         run:
-          git add -A
-          git commit -m"test"
-          git push
+          echo $MYENV
+         # git clone https://github.com/sercangithub/pipelinetest.git
+         # git add -A
+         # git commit -m"test"
+         # git push
         
         
 
