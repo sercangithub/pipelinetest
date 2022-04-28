@@ -1,7 +1,7 @@
 name: pipeline
 on: 
-  push: 
-    branches: [ main ]        
+  schedule:  
+    - cron: '12 12 * * *'      
 env:
   test: test
   GITHUB_ACTOR: sercangithub
