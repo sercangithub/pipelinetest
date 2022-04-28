@@ -15,5 +15,5 @@ jobs:
           pip install beautifulsoup4 
       - name: run python
         run: |
-        python3 deneme.py
+          python3 deneme.py
           
