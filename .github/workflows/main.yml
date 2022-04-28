@@ -15,6 +15,7 @@ jobs:
           pip install beautifulsoup4 
       - name: prin pwd
         run: pwd
-      - name: ls -la
+      - name: ls
+        run: ls -la
       
           
