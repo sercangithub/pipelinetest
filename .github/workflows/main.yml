@@ -10,8 +10,7 @@ jobs:
     steps:
       - name: print env
         run: |
-          python3 
-          import requests
-          import re
-          x = "Hi from python"
-          print(x)
+          pip install re
+          pip install requests
+          pip install BeautifulSoup 
+          
