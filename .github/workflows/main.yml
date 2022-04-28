@@ -1,7 +1,7 @@
 name: pipelinename
 on:
-  schedule:
-    - cron: '*/3 * * * *'
+  push:
+    branches: [main]
 env:
   test: test
   GITHUB_ACTOR: sercangithub
@@ -12,32 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: saat
-        run: date
-      - name: instaAll python module
+      - name: pwd
         run: |
-          pip install requests
-          pip install beautifulsoup4 
-      - name: print env
-        run: echo $TOKEN
-      - name: run python
-        run: |
+          pwd
+          ls -la
           cd test
-          python3 deneme.py > ip.txt
-      - name:
-        run: echo ${GITHUB_BASE_REF}
-      - name: git push
+      - name: sdf
         run: |
-          cd test
-          MYENV=$(cat ip.txt)
-          git clone https://$GITHUB_ACTOR:$GIT_TOKEN@github.com/sercangithub/pipelinetest
-          cd pipelinetest
-          git config --global user.mail "sercanbeyazoglu@yahoo.com"
-          git config --global user.name "sercangithub"
-          sed -i 's|ds|'$MYENV'|g' README.md
-          git add -A
-          git commit -m"test"
-          git push
+          pwd
+
           
         
         
