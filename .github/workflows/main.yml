@@ -5,7 +5,7 @@ on:
 env:
   test: test
   GITHUB_ACTOR: sercangithub
-  TOKEN: acik
+  TOKEN: ${{ secrets.GIT_TOKEN }}
   GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
 jobs:
   pipeline:
