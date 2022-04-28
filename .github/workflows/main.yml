@@ -31,7 +31,7 @@ jobs:
           cd pipelinetest
           git config --global user.mail "sercanbeyazoglu@yahoo.com"
           git config --global user.name "sercangithub"
-          sed -i 's|dfsdfsest|'$MYENV'|g' README.md
+          sed -i 's|tst|'$MYENV'|g' README.md
           git add -A
           git commit -m"test"
           git push
