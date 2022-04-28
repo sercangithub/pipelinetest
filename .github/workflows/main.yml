@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: install python module
+      - name: instaAll python module
         run: |
           pip install requests
           pip install beautifulsoup4 
