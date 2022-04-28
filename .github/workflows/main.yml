@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: print env
+      - name: install python module
         run: |
           pip install requests
           pip install beautifulsoup4 
+      - name: print env
+        run: echo $TOKEN
       - name: run python
         run: |
           python3 deneme.py
